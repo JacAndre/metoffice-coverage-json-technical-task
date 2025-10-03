@@ -37,11 +37,11 @@ public class DomainMapper {
     private List<Reference> mapReferencing() {
         return List.of(
                 new Reference(
-                        List.of("x", "y", "z"),
+                        List.of("x", "y"),
                         new System("GeographicCRS", GEOGRAPHIC_CRS_ID, null)
                 ),
                 new Reference(
-                        List.of("x", "y", "z"),
+                        List.of("t"),
                         new System("TemporalRS", null, TEMPORAL_CALENDAR)
                 )
         );
