@@ -1,6 +1,5 @@
 package com.jacandre.utils;
 
-import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -9,9 +8,9 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-@Slf4j
 @ExtendWith(MockitoExtension.class)
 public class WeatherCSVValidatorTest {
+
     @InjectMocks
     WeatherCSVValidator csvValidator;
 
