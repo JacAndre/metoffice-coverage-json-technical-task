@@ -9,6 +9,7 @@ import java.util.Arrays;
 
 @Slf4j
 public class WeatherCSVValidator {
+
     public boolean validateParsedRow(String[] row) {
         if (row == null || row.length != 4) return false;
 
