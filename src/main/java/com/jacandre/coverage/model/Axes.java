@@ -10,7 +10,8 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@JsonInclude(JsonInclude.Include.NON_NULL)public class Axes {
+@JsonInclude(JsonInclude.Include.NON_NULL)
+public class Axes {
     private List<Double> x;
     private List<Double> y;
     private List<Double> z;
