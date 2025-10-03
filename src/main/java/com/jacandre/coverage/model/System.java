@@ -1,4 +1,4 @@
-package com.jacandre.models.coverage;
+package com.jacandre.coverage.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class Symbol {
-    private String value;
+public class System {
     private String type;
+    private String id;
 }

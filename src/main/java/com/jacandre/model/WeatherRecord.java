@@ -1,4 +1,4 @@
-package com.jacandre.models;
+package com.jacandre.model;
 
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;

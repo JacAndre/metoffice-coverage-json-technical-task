@@ -1,4 +1,4 @@
-package com.jacandre.models.coverage;
+package com.jacandre.coverage.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
