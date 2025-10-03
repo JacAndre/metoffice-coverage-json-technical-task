@@ -12,7 +12,7 @@ public class ParameterMapper {
     private static final String TEMPERATURE_UNIT_TYPE_UCUM = "http://www.opengis.net/def/uom/UCUM/";
     private static final String TEMPERATURE_OBSERVED_PROPERTY_ID = "http://vocab.nerc.ac.uk/standard_name/air_temperature/";
 
-    public Parameter mapParameter() {
+    public Parameter mapTemperatureParameter() {
         Parameter parameter = new Parameter();
         parameter.setType("Parameter");
         parameter.setDescription(Map.of("en", "Air temperature"));
