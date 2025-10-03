@@ -1,4 +1,4 @@
-package com.jacandre.models;
+package com.jacandre.model;
 
 import org.junit.jupiter.api.Test;
 
