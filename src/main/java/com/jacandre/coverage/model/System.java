@@ -11,5 +11,6 @@ import lombok.NoArgsConstructor;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class System {
     private String type;
-    private String id;
+    private String id;          // Optional for Geographic
+    private String calendar;    // Optional for Temporal
 }
