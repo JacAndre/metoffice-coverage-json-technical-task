@@ -13,18 +13,20 @@ import java.util.List;
 
 @Slf4j
 public class WeatherCSVReader {
-    public List<String[]> readFromFile(String fileName) throws FileNotFoundException {
+
+    public List<String[]> readFromFile(String fileName) {
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName));
              CSVReader csvReader = new CSVReaderBuilder(reader)
                      .withSkipLines(1)
                      .build()) {
 
             return csvReader.readAll();
-
-        } catch (IOException | CsvException e) {
-            log.error("WeatherCSVReader::readFromFile - Failed to read CSV file: {}", (Object) e.getStackTrace());
+        } catch (IOException e) {
+            log.error("WeatherCSVReader::readFromFile - I/O error reading file '{}': {}", fileName, e.getMessage(), e);
+        } catch (CsvException e) {
+            log.error("WeatherCSVReader::readFromFile - CSV parsing error in file '{}': {}", fileName, e.getMessage(), e);
         }
 
-        return null;
+        return List.of();
     }
 }
