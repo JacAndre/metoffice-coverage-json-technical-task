@@ -20,7 +20,7 @@ This reads from `data/input/weather.csv` and writes a CoverageJSON file to `data
 mvn test
 ```
 
-Unit tests cover CSV reading, validation, Coverage mapping, and JSON serialization.
+Unit tests cover CSV reading, validation, Coverage mapping, and JSON serialisation.
 
 ## Project Structure
 
@@ -79,7 +79,7 @@ This project was written with the following assumptions in mind:
 
 | Library              | Purpose                                |
 |----------------------|----------------------------------------|
-| Jackson Databind     | Serializes Java objects to JSON format |
+| Jackson Databind     | Serialises Java objects to JSON format |
 | OpenCSV              | Parses CSV files to Java Objects       |
 | Apache Commons Lang	 | Utility functions                      |
 | SLF4J                | Logging                                |
