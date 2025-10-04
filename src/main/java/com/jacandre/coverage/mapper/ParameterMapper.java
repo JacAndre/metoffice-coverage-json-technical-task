@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class ParameterMapper {
 
-    private static final String TEMPERATURE_UNIT_TYPE_UCUM = "http://www.opengis.net/def/uom/UCUM/";
+    private static final String TEMPERATURE_UNIT_TYPE_KELVIN = "https://ucum.org/ucum#para-28";
     private static final String TEMPERATURE_OBSERVED_PROPERTY_ID = "http://vocab.nerc.ac.uk/standard_name/air_temperature/";
 
     public Parameter mapTemperatureParameter() {
@@ -19,7 +19,7 @@ public class ParameterMapper {
 
         Unit unit = new Unit();
         unit.setLabel(Map.of("en", "Kelvin"));
-        unit.setSymbol(new Symbol("K", TEMPERATURE_UNIT_TYPE_UCUM));
+        unit.setSymbol(new Symbol("K", TEMPERATURE_UNIT_TYPE_KELVIN));
         parameter.setUnit(unit);
 
         ObservedProperty observedProperty = new ObservedProperty();
