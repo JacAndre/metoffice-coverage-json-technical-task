@@ -13,7 +13,7 @@ import java.util.List;
 @Slf4j
 public class App 
 {
-    public static void main( String[] args ) throws Exception {
+    public static void main( String[] args ) {
         WeatherCsvReader reader = new WeatherCsvReader();
         WeatherCsvValidator validator = new WeatherCsvValidator();
         List<WeatherRecord> records = new ArrayList<>();
