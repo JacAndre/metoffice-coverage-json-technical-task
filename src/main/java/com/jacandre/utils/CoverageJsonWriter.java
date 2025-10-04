@@ -14,7 +14,7 @@ public class CoverageJsonWriter {
         try {
             return mapper.writeValueAsString(coverage);
         } catch (JsonProcessingException e) {
-            log.error("CoverageJsonWriter::toJson - Failed to serialize Coverage", e);
+            log.error("CoverageJsonWriter::toJson - Failed to serialise Coverage", e);
             return "{}";
         }
     }
