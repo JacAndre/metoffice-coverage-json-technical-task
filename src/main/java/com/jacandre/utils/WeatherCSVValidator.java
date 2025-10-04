@@ -11,7 +11,10 @@ import java.util.Arrays;
 public class WeatherCSVValidator {
 
     public boolean validateParsedRow(String[] row) {
-        if (row == null || row.length != 4) return false;
+        if (row == null || row.length != 4) {
+            log.error("WeatherCSVValidator::validateParsedRow - Validation failed for row {}: Too many fields", Arrays.toString(row));
+            return false;
+        }
 
         try {
             // Check if Time field is a valid ZonedDateTime
@@ -23,7 +26,7 @@ public class WeatherCSVValidator {
             Double.parseDouble(row[3]); // temperature
 
             return true;
-        } catch(DateTimeParseException | NumberFormatException e) {
+        } catch (DateTimeParseException | NumberFormatException e) {
             log.error("WeatherCSVValidator::validateParsedRow - Validation failed for row {}: {}", Arrays.toString(row), e.getMessage());
             return false;
         }
