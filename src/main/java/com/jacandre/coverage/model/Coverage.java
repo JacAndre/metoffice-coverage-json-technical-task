@@ -10,7 +10,8 @@ import java.util.Map;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@JsonInclude(JsonInclude.Include.NON_NULL)public class Coverage {
+@JsonInclude(JsonInclude.Include.NON_NULL)
+public class Coverage {
     private String type;
     private Domain domain;
     private Map<String, Parameter> parameters;

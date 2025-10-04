@@ -10,7 +10,8 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@JsonInclude(JsonInclude.Include.NON_NULL)public class Domain {
+@JsonInclude(JsonInclude.Include.NON_NULL)
+public class Domain {
     private String type;
     private String domainType;
     private Axes axes;
