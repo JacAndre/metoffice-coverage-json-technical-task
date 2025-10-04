@@ -11,7 +11,7 @@ import java.time.format.DateTimeFormatter;
 @Slf4j
 public class CoverageJsonExporter {
 
-    public void exportToFile(Coverage coverage) throws Exception {
+    public void exportToFile(Coverage coverage) {
         try {
             LocalDateTime now = LocalDateTime.now();
             String timeStamp = now.format(DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss"));
