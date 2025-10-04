@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.util.List;
 
 @Slf4j
-public class WeatherCSVReader {
+public class WeatherCsvReader {
 
     public List<String[]> readFromFile(String fileName) {
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName));
@@ -21,9 +21,9 @@ public class WeatherCSVReader {
 
             return csvReader.readAll();
         } catch (IOException e) {
-            log.error("WeatherCSVReader::readFromFile - I/O error reading file '{}': {}", fileName, e.getMessage(), e);
+            log.error("WeatherCsvReader::readFromFile - I/O error reading file '{}': {}", fileName, e.getMessage(), e);
         } catch (CsvException e) {
-            log.error("WeatherCSVReader::readFromFile - CSV parsing error in file '{}': {}", fileName, e.getMessage(), e);
+            log.error("WeatherCsvReader::readFromFile - CSV parsing error in file '{}': {}", fileName, e.getMessage(), e);
         }
 
         return List.of();

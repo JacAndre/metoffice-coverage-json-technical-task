@@ -9,9 +9,9 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 @ExtendWith(MockitoExtension.class)
-public class WeatherCSVReaderTest {
+public class WeatherCsvReaderTest {
 
-    private final WeatherCSVReader reader = new WeatherCSVReader();
+    private final WeatherCsvReader reader = new WeatherCsvReader();
 
     @Test
     void readFromFile_shouldReturnDataRows_andSkipHeader_whenCSVIsValid() {

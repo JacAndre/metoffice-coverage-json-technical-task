@@ -8,11 +8,11 @@ import java.time.format.DateTimeParseException;
 import java.util.Arrays;
 
 @Slf4j
-public class WeatherCSVValidator {
+public class WeatherCsvValidator {
 
     public boolean validateParsedRow(String[] row) {
         if (row == null || row.length != 4) {
-            log.error("WeatherCSVValidator::validateParsedRow - Validation failed for row {}: Too many fields", Arrays.toString(row));
+            log.error("WeatherCsvValidator::validateParsedRow - Validation failed for row {}: Too many fields", Arrays.toString(row));
             return false;
         }
 
@@ -27,7 +27,7 @@ public class WeatherCSVValidator {
 
             return true;
         } catch (DateTimeParseException | NumberFormatException e) {
-            log.error("WeatherCSVValidator::validateParsedRow - Validation failed for row {}: {}", Arrays.toString(row), e.getMessage());
+            log.error("WeatherCsvValidator::validateParsedRow - Validation failed for row {}: {}", Arrays.toString(row), e.getMessage());
             return false;
         }
     }

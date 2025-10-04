@@ -8,9 +8,9 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @ExtendWith(MockitoExtension.class)
-public class WeatherCSVValidatorTest {
+public class WeatherCsvValidatorTest {
 
-    private final WeatherCSVValidator validator = new WeatherCSVValidator();
+    private final WeatherCsvValidator validator = new WeatherCsvValidator();
 
     @Test
     void validateParsedRow_shouldReturnTrue_forValidRow() {
